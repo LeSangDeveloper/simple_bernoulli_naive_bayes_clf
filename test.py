@@ -14,7 +14,7 @@ label = np.array(['B', 'B', 'B', 'N']) # 0 - B, 1 - N
 d5 = np.array([[1, 0, 0, 1, 0, 0, 0, 1, 0]])
 d6 = np.array([[0, 1, 0, 0, 0, 0, 0, 1, 1]])
 
-clf = BernoulliNB()
+clf = BernoulliNB(alpha=0.583, beta=2)
 clf.fit(train_data, label)
 # clf(d1)
 
